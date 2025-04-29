@@ -1,0 +1,47 @@
+---
+title: "Home"
+format: html
+---
+
+<div style="text-align: center; margin-top: 2rem;">
+  <h1 style="margin-bottom: 0.3rem; font-size: 2.5rem;">Miguel Gutierrez</h1>
+  <h4 style="margin-top: 0; font-weight: normal; color: #555;">Social Data Analytics and Research Graduate Student</h4>
+</div>
+
+![](images/profile.jpg){width=150px style="border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: block; margin-left: auto; margin-right: auto; margin-top: 1rem; margin-bottom: 1rem;"}
+
+
+
+
+Welcome to my projects website. I am passionte about **data analysis**, **economics** and **machine learning**.
+My work focuses on using quantitative methods in the social sciences.
+
+
+---
+
+
+##  Skills
+
+ Statistical Modeling (R, Python)  
+ Machine Learning Fundamentals  
+ Data Visualization and Reporting  
+ Research Design and Knowledge Mining  
+
+---
+
+##  Research Interests
+
+ Development Economics  
+ Machine Learning Applications in Social Sciences  
+ Policy Analysis  
+
+---
+
+## Projects
+
+
+
+
+
+  
+

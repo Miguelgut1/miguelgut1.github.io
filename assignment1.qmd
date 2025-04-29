@@ -1,0 +1,18 @@
+---
+title: "Assignment1"
+format: html
+---
+
+# Breiman. Statistical Modeling
+
+The author strongly critics the use of statistical models to "forcefully" fit the data by statisticians. The problem with this approach of "one size fits all" is that there are other methods, such as algorithmic modeling that often yield better outcomes (more accuracy on predictions). Breiman, who spent several years in academia and industry argues the lack of progress of statisticians in academia by focusing only on trying to fit the model into the data. In his time as a freelancer, he realized that algorithmic modeling is far more advantageous in accuracy. However, this accuracy come at the expense of interpretability. For Breiman, this is not an issue as he argues that in most fields the need more accuracy is far greater than understanding the model.
+
+# Shmueli. "To Explain or to Predict"
+
+Shmueli explains that it is crucial to define the purpose of the analysis. Are we trying to explain (explanatory analysis) or we are trying to predict (predictive analysis). Unlike Breiman, he argues that having define the purpose of our analysis will help us use the "right" tools. He adds that for explanatory analysis, we are more interested in describing the data, the interpretability is more important than accuracy. For predictive analysis on the contrary, accuracy is the top priority and understanding of the model is secondary.
+
+# So... Statistical Modeling or Algorithmic Modeling
+
+Both authors agree that we need to understand the data first and define our purpose. Then, based on the data we can test what model fits best. Breiman advises us to allow interdisciplinary collaboration with other fields as other experts (fields that use "real life" examples) are using more algorithmic models to create accurate predictions. On the other hand, Shmueli advises us that statistical research needs to evolve to include methods for modeling process to better align scientific research and real world applications.
+
+# 

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  background-color: #fdfbf7; 
+  color: #3e3e3e; 
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  color: #2d2d2d; 
+}
+
+
+.navbar {
+  background-color: #f4f1ec; /* Pale warm taupe */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar a.nav-link {
+  color: #3e3e3e !important; /* Soft dark gray */
+  font-weight: 600;
+}
+
+.navbar a.nav-link:hover {
+  color: #708b75 !important; /* Soft olive green on hover */
+}
+
+
+.page-footer {
+  background-color: #f4f1ec;
+  color: #7a7a7a;
+  font-size: 0.9rem;
+}
+
+
+a {
+  color: #708b75; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4f6650; 
+  text-decoration: underline;
+}
+
+
+pre, code {
+  background-color: #f7f6f3; 
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}

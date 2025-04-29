@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "c9c14e92"
+  },
+  "about.qmd": {
+    "about.html": "6a9db51a"
+  },
+  "research.qmd": {
+    "research.html": "96a7334f"
+  },
+  "cv.qmd": {
+    "cv.html": "0b6cf61e"
+  },
+  "assignment1.qmd": {
+    "assignment1.html": "85bd3ea1"
+  },
+  "assignments.qmd": {
+    "assignments.html": "4cbe47d4"
+  },
+  "project.qmd": {
+    "project.html": "3387c628"
+  },
+  "Lab01.qmd": {
+    "Lab01.html": "226a0fad"
+  },
+  "assignment2.qmd": {
+    "assignment2.html": "17fde7e2"
+  },
+  "Lab02.qmd": {
+    "Lab02.html": "a7501b01"
+  },
+  "Untitled.qmd": {
+    "Untitled.html": "3b464ae6"
+  },
+  "projects.qmd": {
+    "projects.html": "624848a5"
+  }
+}

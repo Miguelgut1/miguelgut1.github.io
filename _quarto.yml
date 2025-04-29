@@ -1,0 +1,47 @@
+project:
+  type: website
+
+website:
+  favicon: images/favicon.png
+  title: "Miguel Gutierrez"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: cv.qmd
+        text: CV
+      - text: Assignments
+        menu:
+          - href: assignment1.qmd
+            text: Assignment 1
+          - href: Lab01.qmd
+            text: Assignment 2 - Lab 1
+          - href: Lab02.qmd
+            text: Assignment 2 - Lab 2
+    right: 
+    - icon: linkedin
+      href: https://www.linkedin.com/in/miguelgutierrez-p/
+    - icon: github
+      href: https://github.com/Miguelgut1 
+    - icon: envelope
+      href: mailto:miguelagp1@hotmail.com
+
+  page-footer:
+    center: "© 2025 Miguel Gutierrez"
+
+format:
+  html:
+    theme: cosmo                  
+    css: styles.css               
+    toc: true                      
+    code-copy: true                
+    include-in-header: 
+      - text: |
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+editor: visual
