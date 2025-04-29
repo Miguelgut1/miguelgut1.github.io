@@ -3,9 +3,9 @@
     "path": "C:/Users/migue/OneDrive/Escritorio/miguelgut1.github.io/research.qmd",
     "project_path": "research.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2712943580",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1738265990349.0,
     "source_on_save": true,
     "relative_order": 3,
@@ -21,11 +21,11 @@
         "rmdVisualModeLocation": "36:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1738870311,
+    "lastKnownWriteTime": 1745906790,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1745904843264,
+    "last_content_update": 1745906790064,
     "read_only": false,
     "read_only_alternatives": []
 }
