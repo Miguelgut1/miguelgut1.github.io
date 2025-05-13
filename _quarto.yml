@@ -24,6 +24,14 @@ website:
             text: Assignment 2 - Lab 1
           - href: Lab02.qmd
             text: Assignment 2 - Lab 2
+          - href: assignment2.qmd
+            text: Assignment 2
+          - href: assignment3.qmd
+            text: Assignment 3
+          - href: assignment4.qmd
+            text: Assignment 4
+          - href: assignment5.qmd
+            text: Assignment 5
     right: 
     - icon: linkedin
       href: https://www.linkedin.com/in/miguelgutierrez-p/

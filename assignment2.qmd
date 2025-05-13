@@ -3,3 +3,45 @@ title: "assigment2"
 format: html
 ---
 
+```{r}
+library(haven)
+TEDS_2016 <- 
+  read_stata('https://github.com/datageneration/home/blob/master/DataProgramming/data/TEDS_2016.dta?raw=true')
+```
+
+The dataset is quite large with 1690 observations and 54 variables. Also, it has many missing values which comes from the same columns. I would probably say to delete those columns that have multiple missing values. However, it greatly depends on what we are trying to analyze.
+
+```{r}
+library(ggplot2)
+ggplot(TEDS_2016, aes(x = edu, y = Tondu)) +
+  geom_line() +
+  labs(title = " Tondu Support by Education ",
+       x = "Education", y = " Tondu Support")
+
+```
+
+It is important to undestand what the values for Tondu means, since they are binary- support or no suport. However, they differ from each other.
+
+```{r}
+TEDS_2016$Tondu <- factor(TEDS_2016$Tondu,
+levels = 1:7,
+labels = c("Unification now", "Status quo, unif. in future", "Status quo, decide later", "Status quo forever", "Status quo, indep. in future",
+"Independence now", "No response"))
+
+table(TEDS_2016$Tondu)
+
+
+```
+```{r}
+library(ggplot2)
+
+ggplot(TEDS_2016, aes(x = Tondu)) +
+  geom_bar(fill = "red") +
+  labs(title = "Support for Tondu Options",
+       x = "Tondu Preference",
+       y = "Count") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+```
+
+AS we have long label, I needed to change the x axis format to fit all the labels. 
