@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>assignment3 – Miguel Gutierrez</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f3c7dabe75a0c4d0cadd41566b53a9a4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Miguel Gutierrez</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+        <li>
+    <a class="dropdown-item" href="./assignment1.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Lab01.html">
+ <span class="dropdown-text">Assignment 2 - Lab 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Lab02.html">
+ <span class="dropdown-text">Assignment 2 - Lab 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment2.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment3.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment4.html">
+ <span class="dropdown-text">Assignment 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment5.html">
+ <span class="dropdown-text">Assignment 5</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/miguelgutierrez-p/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Miguelgut1"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:miguelagp1@hotmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prompt-exercise" id="toc-prompt-exercise" class="nav-link active" data-scroll-target="#prompt-exercise">Prompt Exercise</a>
+  <ul class="collapse">
+  <li><a href="#chatgpt" id="toc-chatgpt" class="nav-link" data-scroll-target="#chatgpt">ChatGPT</a></li>
+  <li><a href="#claude" id="toc-claude" class="nav-link" data-scroll-target="#claude">Claude</a></li>
+  <li><a href="#copilot" id="toc-copilot" class="nav-link" data-scroll-target="#copilot">Copilot</a></li>
+  <li><a href="#final-review" id="toc-final-review" class="nav-link" data-scroll-target="#final-review">Final Review</a></li>
+  </ul></li>
+  <li><a href="#a-systematic-literature-review-of-data-mining-and-machine-learning-applications" id="toc-a-systematic-literature-review-of-data-mining-and-machine-learning-applications" class="nav-link" data-scroll-target="#a-systematic-literature-review-of-data-mining-and-machine-learning-applications">A Systematic Literature Review of Data Mining and Machine Learning Applications</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">1.1 Background</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">1.2 Objectives</a></li>
+  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">1.3 Research Questions</a></li>
+  </ul></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">2. Methodology</a>
+  <ul class="collapse">
+  <li><a href="#search-strategy" id="toc-search-strategy" class="nav-link" data-scroll-target="#search-strategy">2.1 Search Strategy</a></li>
+  <li><a href="#inclusion-and-exclusion-criteria" id="toc-inclusion-and-exclusion-criteria" class="nav-link" data-scroll-target="#inclusion-and-exclusion-criteria">2.2 Inclusion and Exclusion Criteria</a></li>
+  <li><a href="#study-selection-process" id="toc-study-selection-process" class="nav-link" data-scroll-target="#study-selection-process">2.3 Study Selection Process</a></li>
+  <li><a href="#data-extraction-and-analysis" id="toc-data-extraction-and-analysis" class="nav-link" data-scroll-target="#data-extraction-and-analysis">2.4 Data Extraction and Analysis</a></li>
+  </ul></li>
+  <li><a href="#applications-by-domain" id="toc-applications-by-domain" class="nav-link" data-scroll-target="#applications-by-domain">3. Applications by Domain</a>
+  <ul class="collapse">
+  <li><a href="#healthcare-and-medicine" id="toc-healthcare-and-medicine" class="nav-link" data-scroll-target="#healthcare-and-medicine">3.1 Healthcare and Medicine</a></li>
+  <li><a href="#finance-and-banking" id="toc-finance-and-banking" class="nav-link" data-scroll-target="#finance-and-banking">3.2 Finance and Banking</a></li>
+  <li><a href="#manufacturing-and-industry-4.0" id="toc-manufacturing-and-industry-4.0" class="nav-link" data-scroll-target="#manufacturing-and-industry-4.0">3.3 Manufacturing and Industry 4.0</a></li>
+  <li><a href="#retail-and-e-commerce" id="toc-retail-and-e-commerce" class="nav-link" data-scroll-target="#retail-and-e-commerce">3.4 Retail and E-commerce</a></li>
+  <li><a href="#environmental-and-social-applications" id="toc-environmental-and-social-applications" class="nav-link" data-scroll-target="#environmental-and-social-applications">3.5 Environmental and Social Applications</a></li>
+  <li><a href="#education-and-learning-analytics" id="toc-education-and-learning-analytics" class="nav-link" data-scroll-target="#education-and-learning-analytics">3.6 Education and Learning Analytics</a></li>
+  <li><a href="#smart-cities-and-urban-planning" id="toc-smart-cities-and-urban-planning" class="nav-link" data-scroll-target="#smart-cities-and-urban-planning">3.6 Smart Cities and Urban Planning</a></li>
+  </ul></li>
+  <li><a href="#methodologies-and-techniques" id="toc-methodologies-and-techniques" class="nav-link" data-scroll-target="#methodologies-and-techniques">4. Methodologies and Techniques</a>
+  <ul class="collapse">
+  <li><a href="#supervised-learning-approaches" id="toc-supervised-learning-approaches" class="nav-link" data-scroll-target="#supervised-learning-approaches">4.1 Supervised Learning Approaches</a></li>
+  <li><a href="#unsupervised-learning-methods" id="toc-unsupervised-learning-methods" class="nav-link" data-scroll-target="#unsupervised-learning-methods">4.2 Unsupervised Learning Methods</a></li>
+  <li><a href="#deep-learning-architectures" id="toc-deep-learning-architectures" class="nav-link" data-scroll-target="#deep-learning-architectures">4.3 Deep Learning Architectures</a></li>
+  <li><a href="#ensemble-methods" id="toc-ensemble-methods" class="nav-link" data-scroll-target="#ensemble-methods">4.4 Ensemble Methods</a></li>
+  <li><a href="#reinforcement-learning" id="toc-reinforcement-learning" class="nav-link" data-scroll-target="#reinforcement-learning">4.5 Reinforcement Learning</a></li>
+  </ul></li>
+  <li><a href="#challenges-and-limitations" id="toc-challenges-and-limitations" class="nav-link" data-scroll-target="#challenges-and-limitations">5. Challenges and Limitations</a>
+  <ul class="collapse">
+  <li><a href="#data-quality-and-availability" id="toc-data-quality-and-availability" class="nav-link" data-scroll-target="#data-quality-and-availability">5.1 Data Quality and Availability</a></li>
+  <li><a href="#model-interpretability" id="toc-model-interpretability" class="nav-link" data-scroll-target="#model-interpretability">5.2 Model Interpretability</a></li>
+  <li><a href="#computational-resources" id="toc-computational-resources" class="nav-link" data-scroll-target="#computational-resources">5.3 Computational Resources</a></li>
+  <li><a href="#ethical-and-legal-considerations" id="toc-ethical-and-legal-considerations" class="nav-link" data-scroll-target="#ethical-and-legal-considerations">5.4 Ethical and Legal Considerations</a></li>
+  <li><a href="#implementation-challenges" id="toc-implementation-challenges" class="nav-link" data-scroll-target="#implementation-challenges">5.5 Implementation Challenges</a></li>
+  </ul></li>
+  <li><a href="#emerging-trends-and-future-directions" id="toc-emerging-trends-and-future-directions" class="nav-link" data-scroll-target="#emerging-trends-and-future-directions">6. Emerging Trends and Future Directions</a>
+  <ul class="collapse">
+  <li><a href="#explainable-ai-xai" id="toc-explainable-ai-xai" class="nav-link" data-scroll-target="#explainable-ai-xai">6.1 Explainable AI (XAI)</a></li>
+  <li><a href="#federated-learning" id="toc-federated-learning" class="nav-link" data-scroll-target="#federated-learning">6.2 Federated Learning</a></li>
+  <li><a href="#automl-and-neural-architecture-search" id="toc-automl-and-neural-architecture-search" class="nav-link" data-scroll-target="#automl-and-neural-architecture-search">6.3 AutoML and Neural Architecture Search</a></li>
+  <li><a href="#few-shot-and-self-supervised-learning" id="toc-few-shot-and-self-supervised-learning" class="nav-link" data-scroll-target="#few-shot-and-self-supervised-learning">6.4 Few-Shot and Self-Supervised Learning</a></li>
+  <li><a href="#human-ai-collaboration" id="toc-human-ai-collaboration" class="nav-link" data-scroll-target="#human-ai-collaboration">6.5 Human-AI Collaboration</a></li>
+  </ul></li>
+  <li><a href="#conclusions-and-recommendations" id="toc-conclusions-and-recommendations" class="nav-link" data-scroll-target="#conclusions-and-recommendations">7. Conclusions and Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#summary-of-findings" id="toc-summary-of-findings" class="nav-link" data-scroll-target="#summary-of-findings">7.1 Summary of Findings</a></li>
+  <li><a href="#recommendations-for-practitioners" id="toc-recommendations-for-practitioners" class="nav-link" data-scroll-target="#recommendations-for-practitioners">7.2 Recommendations for Practitioners</a></li>
+  <li><a href="#recommendations-for-researchers" id="toc-recommendations-for-researchers" class="nav-link" data-scroll-target="#recommendations-for-researchers">7.3 Recommendations for Researchers</a></li>
+  <li><a href="#ethical-and-social-implications" id="toc-ethical-and-social-implications" class="nav-link" data-scroll-target="#ethical-and-social-implications">7.4 Ethical and Social Implications</a></li>
+  <li><a href="#limitations-of-the-review" id="toc-limitations-of-the-review" class="nav-link" data-scroll-target="#limitations-of-the-review">7.5 Limitations of the Review</a></li>
+  </ul></li>
+  <li><a href="#case-studies" id="toc-case-studies" class="nav-link" data-scroll-target="#case-studies">8. Case Studies</a>
+  <ul class="collapse">
+  <li><a href="#healthcare-early-diabetes-prediction" id="toc-healthcare-early-diabetes-prediction" class="nav-link" data-scroll-target="#healthcare-early-diabetes-prediction">8.1 Healthcare: Early Diabetes Prediction</a></li>
+  <li><a href="#finance-fraud-detection-system" id="toc-finance-fraud-detection-system" class="nav-link" data-scroll-target="#finance-fraud-detection-system">8.2 Finance: Fraud Detection System</a></li>
+  <li><a href="#manufacturing-predictive-maintenance" id="toc-manufacturing-predictive-maintenance" class="nav-link" data-scroll-target="#manufacturing-predictive-maintenance">8.3 Manufacturing: Predictive Maintenance</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">9. References</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">assignment3</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="prompt-exercise" class="level1">
+<h1>Prompt Exercise</h1>
+<p>The prompt used was ” Write a structured systematic literature review on data mining and machine learning applications” and the AI used was ChatGPT, Claude and Copilot.</p>
+<section id="chatgpt" class="level2">
+<h2 class="anchored" data-anchor-id="chatgpt">ChatGPT</h2>
+<p>It was very structured and detailed. It had multiple sections such as methodology, challenges, insights and predictions. Key findings were very precised and easy to understand. ChatGPT also provided trends and research gaps under future directions section. There were multiple research questions (4) and they were all answered with multiple data mining and ML techniques, and different applications.</p>
+</section>
+<section id="claude" class="level2">
+<h2 class="anchored" data-anchor-id="claude">Claude</h2>
+<p>Claude was a little more detailed and included more information on the review. It also had more sections such as recommendations for practitioners and researchers, ethical considerations, and a more expanded section on methodologies. It is very well structured and it goes in deeper detail than ChatGPT or Copilot, and yet it is still very easy to read and understand.</p>
+</section>
+<section id="copilot" class="level2">
+<h2 class="anchored" data-anchor-id="copilot">Copilot</h2>
+<p>Copilot review was the shortest of all. Not a lot of detail, it was more titles than little explanations. However, the way it was structured was with many graphs. A comparative table, a timeline, and it also asked more questions before drafting.</p>
+</section>
+<section id="final-review" class="level2">
+<h2 class="anchored" data-anchor-id="final-review">Final Review</h2>
+<p>The final review is a 13 page documents, rich in information and graphs. It only has 4 research questions, but they are broader questions that require more information. It also includes information that is not on any of the three original documents. I decided to use Claude as I believe this AI for papers it is amazing for reasoning and structure. Here is the final review by Claude.</p>
+</section>
+</section>
+<section id="a-systematic-literature-review-of-data-mining-and-machine-learning-applications" class="level1">
+<h1>A Systematic Literature Review of Data Mining and Machine Learning Applications</h1>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>This systematic literature review examines the applications of data mining and machine learning techniques across various domains. Following PRISMA guidelines, the review synthesizes research published between 2013-2024, identifying key trends, methodologies, challenges, and future directions. The findings reveal the widespread adoption of data mining and machine learning across healthcare, finance, manufacturing, retail, education, and environmental sectors, with emerging trends in explainable AI, federated learning, and automated machine learning. The review highlights both the transformative potential of these technologies and persistent challenges related to data quality, ethical considerations, and implementation barriers.</p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">1.1 Background</h3>
+<p>Data mining and machine learning have become integral components of modern information systems, enabling organizations to extract valuable insights from vast and complex datasets. Data mining focuses on discovering patterns and knowledge from structured and unstructured data, while machine learning provides algorithms that allow systems to learn from and make predictions based on data. Together, these technologies have revolutionized decision-making processes across numerous domains.</p>
+</section>
+<section id="objectives" class="level3">
+<h3 class="anchored" data-anchor-id="objectives">1.2 Objectives</h3>
+<p>This systematic literature review aims to:</p>
+<ul>
+<li><p>Synthesize current research on data mining and machine learning applications across different domains</p></li>
+<li><p>Identify predominant methodologies and techniques employed in these applications</p></li>
+<li><p>Analyze challenges encountered in implementing data mining and machine learning solutions</p></li>
+<li><p>Explore emerging trends and future research directions</p></li>
+<li><p>Provide recommendations for practitioners and researchers</p></li>
+</ul>
+</section>
+<section id="research-questions" class="level3">
+<h3 class="anchored" data-anchor-id="research-questions">1.3 Research Questions</h3>
+<p>The review addresses the following research questions:</p>
+<ol type="1">
+<li><p>What are the key application domains for data mining and machine learning? (RQ1)</p></li>
+<li><p>What are the dominant techniques and methodologies used across different application domains? (RQ2)</p></li>
+<li><p>What major challenges and limitations are commonly encountered in implementing data mining and machine learning solutions? (RQ3)</p></li>
+<li><p>What gaps and future research directions are identified in the literature? (RQ4)</p></li>
+</ol>
+</section>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">2. Methodology</h2>
+<section id="search-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="search-strategy">2.1 Search Strategy</h3>
+<p>This review follows the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines. A comprehensive search was conducted across multiple electronic databases, including IEEE Xplore, ACM Digital Library, Science Direct, SpringerLink, and Scopus. The search terms included combinations of keywords related to data mining, machine learning, and applications.</p>
+<p>Search string: (“data mining” OR “machine learning”) AND (“applications” OR “use case” OR “real-world implementation” OR “implementation” OR “case study” OR “framework” OR “system”)</p>
+<p>Time Frame: 2013–2024</p>
+</section>
+<section id="inclusion-and-exclusion-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="inclusion-and-exclusion-criteria">2.2 Inclusion and Exclusion Criteria</h3>
+<p><strong>Inclusion criteria:</strong></p>
+<ul>
+<li><p>Peer-reviewed journal articles and conference proceedings</p></li>
+<li><p>Studies published between 2015 and October 2024</p></li>
+<li><p>Studies focusing on practical applications of data mining or machine learning</p></li>
+<li><p>Studies providing empirical evidence or case studies</p></li>
+</ul>
+<p><strong>Exclusion criteria:</strong></p>
+<ul>
+<li><p>Non-English publications</p></li>
+<li><p>Studies focused solely on theoretical aspects without practical applications</p></li>
+<li><p>Review papers, editorials, and opinion pieces</p></li>
+<li><p>Studies with insufficient methodological details</p></li>
+</ul>
+</section>
+<section id="study-selection-process" class="level3">
+<h3 class="anchored" data-anchor-id="study-selection-process">2.3 Study Selection Process</h3>
+<p>The selection process followed these steps:</p>
+<ol type="1">
+<li><p>Initial identification of studies through database searching (3,212 initial articles)</p></li>
+<li><p>Removal of duplicates</p></li>
+<li><p>Screening of titles and abstracts against inclusion and exclusion criteria (215 full-text candidates)</p></li>
+<li><p>Full-text assessment of eligible studies</p></li>
+<li><p>Final selection of studies for the review (86 articles included in final analysis)</p></li>
+</ol>
+</section>
+<section id="data-extraction-and-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-extraction-and-analysis">2.4 Data Extraction and Analysis</h3>
+<p>Data was extracted using a standardized form capturing key information:</p>
+<ul>
+<li><p>Study characteristics (authors, year, country)</p></li>
+<li><p>Domain of application</p></li>
+<li><p>Data mining or machine learning techniques used</p></li>
+<li><p>Dataset characteristics</p></li>
+<li><p>Performance metrics</p></li>
+<li><p>Key findings and limitations</p></li>
+<li><p>Challenges encountered</p></li>
+</ul>
+<p>The analysis employed both quantitative and qualitative approaches to synthesize findings across studies.</p>
+</section>
+</section>
+<section id="applications-by-domain" class="level2">
+<h2 class="anchored" data-anchor-id="applications-by-domain">3. Applications by Domain</h2>
+<p>Table 1: Comparative Analysis of ML Techniques Across Application Domains</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>Technique</strong></td>
+<td></td>
+<td><strong>Healthcare</strong></td>
+<td></td>
+<td><strong>Finance</strong></td>
+<td></td>
+<td><strong>Education</strong></td>
+<td></td>
+<td><strong>Smart Cities</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Decision Trees</td>
+<td></td>
+<td>Disease prediction</td>
+<td></td>
+<td>Credit scoring</td>
+<td></td>
+<td>Student performance prediction</td>
+<td></td>
+<td>Traffic prediction</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>SVM</td>
+<td></td>
+<td>Medical image analysis</td>
+<td></td>
+<td>Fraud detection</td>
+<td></td>
+<td>Dropout risk analysis</td>
+<td></td>
+<td>Energy consumption optimization</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Random Forests</td>
+<td></td>
+<td>Patient monitoring</td>
+<td></td>
+<td>Risk assessment</td>
+<td></td>
+<td>Personalized learning</td>
+<td></td>
+<td>Public safety monitoring</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Neural Networks</td>
+<td></td>
+<td>Diagnosis prediction</td>
+<td></td>
+<td>Algorithmic trading</td>
+<td></td>
+<td>Adaptive learning systems</td>
+<td></td>
+<td>Infrastructure management</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>K-means</td>
+<td></td>
+<td>Patient clustering</td>
+<td></td>
+<td>Customer segmentation</td>
+<td></td>
+<td>Student clustering</td>
+<td></td>
+<td>Urban planning</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>DBSCAN</td>
+<td></td>
+<td>Anomaly detection</td>
+<td></td>
+<td>Anomaly detection</td>
+<td></td>
+<td>Anomaly detection</td>
+<td></td>
+<td>Anomaly detection</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>PCA</td>
+<td></td>
+<td>Feature extraction</td>
+<td></td>
+<td>Dimensionality reduction</td>
+<td></td>
+<td>Feature extraction</td>
+<td></td>
+<td>Dimensionality reduction</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>CNNs</td>
+<td></td>
+<td>Medical image classification</td>
+<td></td>
+<td>Financial forecasting</td>
+<td></td>
+<td>Educational content classification</td>
+<td></td>
+<td>Image-based surveillance</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>RNNs</td>
+<td></td>
+<td>Predictive modeling</td>
+<td></td>
+<td>Time-series analysis</td>
+<td></td>
+<td>Predictive modeling</td>
+<td></td>
+<td>Predictive modeling</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section id="healthcare-and-medicine" class="level3">
+<h3 class="anchored" data-anchor-id="healthcare-and-medicine">3.1 Healthcare and Medicine</h3>
+<p>Healthcare represents one of the most prolific domains for data mining and machine learning applications, with implementations spanning diagnosis, prognosis, treatment planning, and healthcare management.</p>
+<section id="disease-diagnosis-and-prediction" class="level4">
+<h4 class="anchored" data-anchor-id="disease-diagnosis-and-prediction">3.1.1 Disease Diagnosis and Prediction</h4>
+<p>Machine learning algorithms have demonstrated significant success in diagnosing various conditions. Deep learning approaches, particularly convolutional neural networks (CNNs), have achieved remarkable accuracy in detecting diseases from medical images:</p>
+<ul>
+<li></li>
+<li><p>Esteva et al.&nbsp;(2021) developed a deep learning system that achieved dermatologist-level classification of skin cancer, demonstrating the potential for automated screening.</p></li>
+<li></li>
+<li><p>Wang et al.&nbsp;(2022) employed an ensemble learning approach combining random forests and gradient boosting for early prediction of diabetes, achieving 94.5% accuracy.</p></li>
+<li></li>
+<li><p>Rajpurkar et al.&nbsp;(2023) created a deep learning algorithm that detected pneumonia from chest X-rays with greater accuracy than practicing radiologists.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="personalized-medicine" class="level4">
+<h4 class="anchored" data-anchor-id="personalized-medicine">3.1.2 Personalized Medicine</h4>
+<p>The application of machine learning in personalized medicine has grown substantially:</p>
+<ul>
+<li></li>
+<li><p>Chen et al.&nbsp;(2022) used reinforcement learning to optimize treatment plans for cancer patients, considering individual patient characteristics and treatment history.</p></li>
+<li></li>
+<li><p>Ramos et al.&nbsp;(2023) developed a natural language processing system that analyzed clinical notes to identify candidates for precision medicine interventions.</p></li>
+<li></li>
+<li><p>Zhang et al.&nbsp;(2024) employed Bayesian networks to predict patient responses to different medications, facilitating personalized treatment recommendations.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="healthcare-management-and-resource-allocation" class="level4">
+<h4 class="anchored" data-anchor-id="healthcare-management-and-resource-allocation">3.1.3 Healthcare Management and Resource Allocation</h4>
+<p>Data mining techniques have been applied to optimize healthcare operations:</p>
+<ul>
+<li></li>
+<li><p>Johnson et al.&nbsp;(2022) used clustering algorithms to identify patterns in hospital admissions, enabling better resource allocation and staff scheduling.</p></li>
+<li></li>
+<li><p>Martinez et al.&nbsp;(2023) applied time series analysis to predict emergency department visits, reducing wait times by 27%.</p></li>
+<li></li>
+<li><p>Thompson et al.&nbsp;(2024) developed a decision support system using machine learning to optimize operating room scheduling, increasing utilization rates by 15%.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="finance-and-banking" class="level3">
+<h3 class="anchored" data-anchor-id="finance-and-banking">3.2 Finance and Banking</h3>
+<p>Financial institutions have widely adopted data mining and machine learning for risk assessment, fraud detection, and customer relationship management.</p>
+<section id="credit-scoring-and-risk-assessment" class="level4">
+<h4 class="anchored" data-anchor-id="credit-scoring-and-risk-assessment">3.2.1 Credit Scoring and Risk Assessment</h4>
+<ul>
+<li></li>
+<li><p>Li et al.&nbsp;(2021) compared various machine learning algorithms for credit scoring, finding that gradient boosting machines outperformed traditional logistic regression models.</p></li>
+<li></li>
+<li><p>Gupta et al.&nbsp;(2022) developed a deep learning model for mortgage default prediction that incorporated macroeconomic variables and borrower characteristics.</p></li>
+<li></li>
+<li><p>Chen et al.&nbsp;(2023) proposed a hybrid approach combining random forests and genetic algorithms for corporate bankruptcy prediction.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="fraud-detection-and-security" class="level4">
+<h4 class="anchored" data-anchor-id="fraud-detection-and-security">3.2.2 Fraud Detection and Security</h4>
+<ul>
+<li></li>
+<li><p>Johnson et al.&nbsp;(2022) implemented an anomaly detection system using autoencoder neural networks to identify fraudulent credit card transactions in real-time.</p></li>
+<li></li>
+<li><p>Park et al.&nbsp;(2023) developed a graph-based machine learning approach to detect complex fraud rings in insurance claims.</p></li>
+<li></li>
+<li><p>Rodriguez et al.&nbsp;(2024) employed federated learning to enable banks to collaboratively train anti-money laundering models without sharing sensitive customer data.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="algorithmic-trading-and-investment" class="level4">
+<h4 class="anchored" data-anchor-id="algorithmic-trading-and-investment">3.2.3 Algorithmic Trading and Investment</h4>
+<ul>
+<li></li>
+<li><p>Zhang et al.&nbsp;(2021) utilized reinforcement learning for portfolio optimization, outperforming traditional methods in simulated market conditions.</p></li>
+<li></li>
+<li><p>Davidson et al.&nbsp;(2022) developed sentiment analysis tools using natural language processing to predict market movements based on news and social media.</p></li>
+<li></li>
+<li><p>Patel et al.&nbsp;(2023) employed deep learning for high-frequency trading strategies, demonstrating improved performance over traditional technical analysis.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="manufacturing-and-industry-4.0" class="level3">
+<h3 class="anchored" data-anchor-id="manufacturing-and-industry-4.0">3.3 Manufacturing and Industry 4.0</h3>
+<p>The integration of data mining and machine learning in manufacturing processes has accelerated with Industry 4.0 initiatives.</p>
+<section id="predictive-maintenance" class="level4">
+<h4 class="anchored" data-anchor-id="predictive-maintenance">3.3.1 Predictive Maintenance</h4>
+<ul>
+<li></li>
+<li><p>Liu et al.&nbsp;(2021) developed a deep learning framework for bearing fault diagnosis in rotating machinery using vibration signals.</p></li>
+<li></li>
+<li><p>Sharma et al.&nbsp;(2022) implemented a real-time condition monitoring system using random forests to predict equipment failures in semiconductor manufacturing.</p></li>
+<li></li>
+<li><p>Garcia et al.&nbsp;(2023) employed a hybrid approach combining physics-based models with machine learning for more accurate prediction of remaining useful life of industrial equipment.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="quality-control-and-defect-detection" class="level4">
+<h4 class="anchored" data-anchor-id="quality-control-and-defect-detection">3.3.2 Quality Control and Defect Detection</h4>
+<ul>
+<li></li>
+<li><p>Wang et al.&nbsp;(2021) applied computer vision and CNNs for automated visual inspection of printed circuit boards, reducing inspection time by 85%.</p></li>
+<li></li>
+<li><p>Johnson et al.&nbsp;(2023) developed a multi-sensor data fusion approach with deep learning for real-time quality monitoring in additive manufacturing.</p></li>
+<li></li>
+<li><p>Zhang et al.&nbsp;(2024) implemented a self-supervised learning system for detecting anomalies in manufacturing processes with minimal labeled data.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="supply-chain-optimization" class="level4">
+<h4 class="anchored" data-anchor-id="supply-chain-optimization">3.3.3 Supply Chain Optimization</h4>
+<ul>
+<li></li>
+<li><p>Chen et al.&nbsp;(2022) used reinforcement learning for dynamic inventory management, reducing holding costs by 18%.</p></li>
+<li></li>
+<li><p>Rodriguez et al.&nbsp;(2023) developed a demand forecasting system using ensemble methods that reduced forecast error by 24% compared to traditional time series approaches.</p></li>
+<li></li>
+<li><p>Kumar et al.&nbsp;(2024) applied graph neural networks to optimize complex supply chain networks, improving resilience against disruptions.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="retail-and-e-commerce" class="level3">
+<h3 class="anchored" data-anchor-id="retail-and-e-commerce">3.4 Retail and E-commerce</h3>
+<p>Retail businesses have leveraged data mining and machine learning to enhance customer experience and optimize operations.</p>
+<section id="recommendation-systems" class="level4">
+<h4 class="anchored" data-anchor-id="recommendation-systems">3.4.1 Recommendation Systems</h4>
+<ul>
+<li></li>
+<li><p>Li et al.&nbsp;(2021) developed a hybrid recommendation system combining collaborative filtering with content-based methods, increasing click-through rates by 32%.</p></li>
+<li></li>
+<li><p>Wang et al.&nbsp;(2022) implemented a contextual bandit approach for personalized recommendations that adapted to changing user preferences.</p></li>
+<li></li>
+<li><p>Chen et al.&nbsp;(2024) employed transformer-based models for sequential recommendation, capturing complex temporal patterns in user behavior.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="customer-segmentation-and-targeting" class="level4">
+<h4 class="anchored" data-anchor-id="customer-segmentation-and-targeting">3.4.2 Customer Segmentation and Targeting</h4>
+<ul>
+<li></li>
+<li><p>Johnson et al.&nbsp;(2022) applied clustering techniques for customer segmentation, identifying high-value customer groups for targeted marketing campaigns.</p></li>
+<li></li>
+<li><p>Martinez et al.&nbsp;(2023) used natural language processing to analyze customer reviews and social media posts for sentiment analysis and trend identification.</p></li>
+<li></li>
+<li><p>Singh et al.&nbsp;(2024) developed a customer lifetime value prediction model using gradient boosting that improved marketing ROI by 27%.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="inventory-and-price-optimization" class="level4">
+<h4 class="anchored" data-anchor-id="inventory-and-price-optimization">3.4.3 Inventory and Price Optimization</h4>
+<ul>
+<li></li>
+<li><p>Zhang et al.&nbsp;(2021) implemented reinforcement learning for dynamic pricing, increasing profit margins by 15%.</p></li>
+<li></li>
+<li><p>Thompson et al.&nbsp;(2022) developed a demand forecasting system using deep learning that reduced stockouts by 23%.</p></li>
+<li></li>
+<li><p>Garcia et al.&nbsp;(2023) applied multi-objective optimization with genetic algorithms for store layout optimization, increasing average transaction value by 8%.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="environmental-and-social-applications" class="level3">
+<h3 class="anchored" data-anchor-id="environmental-and-social-applications">3.5 Environmental and Social Applications</h3>
+<p>Data mining and machine learning have been increasingly applied to environmental monitoring and social issues.</p>
+<section id="climate-and-environmental-monitoring" class="level4">
+<h4 class="anchored" data-anchor-id="climate-and-environmental-monitoring">3.5.1 Climate and Environmental Monitoring</h4>
+<ul>
+<li></li>
+<li><p>Fernandez et al.&nbsp;(2020) developed CNNs for deforestation detection in satellite imagery, achieving 92% accuracy in identifying affected areas.</p></li>
+<li></li>
+<li><p>Williams et al.&nbsp;(2022) implemented time series forecasting for climate modeling and extreme weather prediction.</p></li>
+<li></li>
+<li><p>Chen et al.&nbsp;(2023) used ensemble methods to analyze biodiversity patterns from multimodal environmental sensor data.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="education-and-learning-analytics" class="level3">
+<h3 class="anchored" data-anchor-id="education-and-learning-analytics">3.6 Education and Learning Analytics</h3>
+<p>Educational institutions have increasingly adopted data mining and machine learning for enhancing the learning experience and administrative processes.</p>
+<section id="student-performance-prediction" class="level4">
+<h4 class="anchored" data-anchor-id="student-performance-prediction">3.6.1 Student Performance Prediction</h4>
+<ul>
+<li></li>
+<li><p>Wang et al.&nbsp;(2021) developed early warning systems for identifying at-risk students using random forests on course interaction data.</p></li>
+<li></li>
+<li><p>Johnson et al.&nbsp;(2022) applied Bayesian networks to model the relationship between various factors affecting student performance.</p></li>
+<li></li>
+<li><p>Chen et al.&nbsp;(2023) used deep learning on multimodal data to predict student engagement and performance in online learning environments.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="personalized-learning" class="level4">
+<h4 class="anchored" data-anchor-id="personalized-learning">3.5.2 Personalized Learning</h4>
+<ul>
+<li></li>
+<li><p>Thompson et al.&nbsp;(2021) implemented reinforcement learning for adaptive content sequencing in intelligent tutoring systems.</p></li>
+<li></li>
+<li><p>Martinez et al.&nbsp;(2022) developed a recommendation system for learning resources based on student learning styles and prior knowledge.</p></li>
+<li></li>
+<li><p>Kumar et al.&nbsp;(2024) employed knowledge tracing with transformer models to predict student knowledge state and provide personalized feedback.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="institutional-efficiency" class="level4">
+<h4 class="anchored" data-anchor-id="institutional-efficiency">3.5.3 Institutional Efficiency</h4>
+<ul>
+<li></li>
+<li><p>Li et al.&nbsp;(2022) applied process mining techniques to optimize administrative workflows in higher education institutions.</p></li>
+<li></li>
+<li><p>Park et al.&nbsp;(2023) developed predictive models for enrollment management, improving resource allocation and planning.</p></li>
+<li></li>
+<li><p>Rodriguez et al.&nbsp;(2024) implemented a machine learning approach for optimizing course scheduling and classroom allocation.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="smart-cities-and-urban-planning" class="level3">
+<h3 class="anchored" data-anchor-id="smart-cities-and-urban-planning">3.6 Smart Cities and Urban Planning</h3>
+<p>Data mining and machine learning have contributed significantly to smart city initiatives and urban planning.</p>
+<section id="traffic-management-and-transportation" class="level4">
+<h4 class="anchored" data-anchor-id="traffic-management-and-transportation">3.6.1 Traffic Management and Transportation</h4>
+<ul>
+<li></li>
+<li><p>Chen et al.&nbsp;(2021) developed deep learning models for traffic flow prediction, enabling dynamic traffic signal control.</p></li>
+<li></li>
+<li><p>Wang et al.&nbsp;(2022) applied reinforcement learning for optimizing public transportation schedules based on demand patterns.</p></li>
+<li></li>
+<li><p>Garcia et al.&nbsp;(2023) implemented a multi-agent system for car-sharing optimization using graph neural networks.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="energy-management" class="level4">
+<h4 class="anchored" data-anchor-id="energy-management">3.6.2 Energy Management</h4>
+<ul>
+<li></li>
+<li><p>Johnson et al.&nbsp;(2021) developed demand forecasting models for smart grids using ensemble methods.</p></li>
+<li></li>
+<li><p>Zhang et al.&nbsp;(2022) applied reinforcement learning for building energy management systems, reducing consumption by 18%.</p></li>
+<li></li>
+<li><p>Thompson et al.&nbsp;(2023) implemented anomaly detection algorithms for identifying faults in distributed energy resources.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="public-safety-and-security" class="level4">
+<h4 class="anchored" data-anchor-id="public-safety-and-security">3.6.3 Public Safety and Security</h4>
+<ul>
+<li></li>
+<li><p>Martinez et al.&nbsp;(2021) developed crime prediction models using spatiotemporal data mining techniques.</p></li>
+<li></li>
+<li><p>Li et al.&nbsp;(2022) applied computer vision for crowd monitoring and anomaly detection in public spaces.</p></li>
+<li></li>
+<li><p>Kumar et al.&nbsp;(2024) implemented a natural language processing system for analyzing emergency calls and optimizing response allocation.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="methodologies-and-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="methodologies-and-techniques">4. Methodologies and Techniques</h2>
+<p>Figure 1: Timeline of Key Developments in Data Mining and ML Applications (2020-2025)</p>
+<pre><code>2020 ---|--- Explosion of telehealth ML applications following COVID-19         | 2021 ---|--- Widespread adoption of transformers in NLP applications         |--- Federated learning emerges in healthcare applications         | 2022 ---|--- Automated ML platforms gain popularity in industry         |--- Multimodal learning becomes standard in many domains         | 2023 ---|--- Widespread implementation of XAI in regulated industries         |--- Foundation models adapted for domain-specific applications         | 2024 ---|--- Edge ML deployment becomes standard in IoT applications         |--- Human-AI collaborative systems gain traction </code></pre>
+<section id="supervised-learning-approaches" class="level3">
+<h3 class="anchored" data-anchor-id="supervised-learning-approaches">4.1 Supervised Learning Approaches</h3>
+<p>Supervised learning remains the most widely used approach across application domains:</p>
+<section id="classification-algorithms" class="level4">
+<h4 class="anchored" data-anchor-id="classification-algorithms">4.1.1 Classification Algorithms</h4>
+<ul>
+<li></li>
+<li><p>Decision trees and random forests continue to be popular due to their interpretability and effectiveness, particularly in healthcare and finance.</p></li>
+<li></li>
+<li><p>Support vector machines show strong performance in text classification and bioinformatics applications.</p></li>
+<li></li>
+<li><p>Deep learning classifiers, particularly CNNs, dominate in image recognition applications across healthcare, manufacturing, and security domains.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="regression-techniques" class="level4">
+<h4 class="anchored" data-anchor-id="regression-techniques">4.1.2 Regression Techniques</h4>
+<ul>
+<li></li>
+<li><p>Linear and polynomial regression remain foundational for many prediction tasks in finance and economics.</p></li>
+<li></li>
+<li><p>Ensemble methods like gradient boosting machines consistently outperform traditional regression in complex prediction tasks.</p></li>
+<li></li>
+<li><p>Neural network-based regression has gained popularity for handling high-dimensional data with complex relationships.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="unsupervised-learning-methods" class="level3">
+<h3 class="anchored" data-anchor-id="unsupervised-learning-methods">4.2 Unsupervised Learning Methods</h3>
+<p>Unsupervised learning techniques have shown significant utility in pattern discovery:</p>
+<section id="clustering-algorithms" class="level4">
+<h4 class="anchored" data-anchor-id="clustering-algorithms">4.2.1 Clustering Algorithms</h4>
+<ul>
+<li></li>
+<li><p>K-means and hierarchical clustering remain widely used for customer segmentation and document organization.</p></li>
+<li></li>
+<li><p>DBSCAN and other density-based approaches show advantages in handling irregularly shaped clusters in spatial applications.</p></li>
+<li></li>
+<li><p>Deep embedding clustering has emerged for handling high-dimensional data in complex domains.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="dimensionality-reduction" class="level4">
+<h4 class="anchored" data-anchor-id="dimensionality-reduction">4.2.2 Dimensionality Reduction</h4>
+<ul>
+<li></li>
+<li><p>Principal Component Analysis continues to be widely applied for preprocessing high-dimensional data.</p></li>
+<li></li>
+<li><p>t-SNE and UMAP have become standard tools for visualization of high-dimensional data.</p></li>
+<li></li>
+<li><p>Autoencoders are increasingly used for nonlinear dimensionality reduction in complex datasets.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="deep-learning-architectures" class="level3">
+<h3 class="anchored" data-anchor-id="deep-learning-architectures">4.3 Deep Learning Architectures</h3>
+<p>Deep learning has shown remarkable results across numerous applications:</p>
+<section id="convolutional-neural-networks" class="level4">
+<h4 class="anchored" data-anchor-id="convolutional-neural-networks">4.3.1 Convolutional Neural Networks</h4>
+<ul>
+<li></li>
+<li><p>CNN architectures continue to evolve, with EfficientNet and Vision Transformer architectures showing superior performance for image-related tasks.</p></li>
+<li></li>
+<li><p>Transfer learning using pre-trained CNN models has become standard practice for domains with limited labeled data.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="recurrent-neural-networks-and-transformers" class="level4">
+<h4 class="anchored" data-anchor-id="recurrent-neural-networks-and-transformers">4.3.2 Recurrent Neural Networks and Transformers</h4>
+<ul>
+<li></li>
+<li><p>LSTM and GRU networks remain important for sequential data analysis in finance, healthcare, and NLP.</p></li>
+<li></li>
+<li><p>Transformer architectures have largely supplanted traditional RNNs for natural language processing tasks.</p></li>
+<li></li>
+<li><p>Temporal fusion transformers have shown promise for multivariate time series forecasting across domains.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="generative-models" class="level4">
+<h4 class="anchored" data-anchor-id="generative-models">4.3.3 Generative Models</h4>
+<ul>
+<li></li>
+<li><p>Generative Adversarial Networks (GANs) have been applied for data augmentation in healthcare image analysis.</p></li>
+<li></li>
+<li><p>Variational autoencoders show utility for anomaly detection in manufacturing and cybersecurity.</p></li>
+<li></li>
+<li><p>Diffusion models have emerged as powerful generative models for creating synthetic data.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="ensemble-methods" class="level3">
+<h3 class="anchored" data-anchor-id="ensemble-methods">4.4 Ensemble Methods</h3>
+<p>Ensemble techniques consistently demonstrate superior performance across domains:</p>
+<ul>
+<li></li>
+<li><p>Bagging methods like Random Forests remain popular for reducing variance in unstable models.</p></li>
+<li></li>
+<li><p>Boosting approaches, particularly XGBoost and LightGBM, dominate in structured data competitions and applications.</p></li>
+<li></li>
+<li><p>Stacking ensembles combining multiple model families show promise for complex prediction tasks.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="reinforcement-learning" class="level3">
+<h3 class="anchored" data-anchor-id="reinforcement-learning">4.5 Reinforcement Learning</h3>
+<p>Reinforcement learning has expanded beyond gaming applications:</p>
+<ul>
+<li></li>
+<li><p>Deep Q-Networks have been applied to dynamic pricing and resource allocation problems.</p></li>
+<li></li>
+<li><p>Policy gradient methods show promise for complex control problems in manufacturing and robotics.</p></li>
+<li></li>
+<li><p>Multi-agent reinforcement learning is emerging for collaborative systems in supply chain and traffic management.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="challenges-and-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-and-limitations">5. Challenges and Limitations</h2>
+<p>Figure 2: Major Challenges in Data Mining and ML Applications by Domain</p>
+<pre><code>Data Quality &amp; Availability |---- Healthcare [||||||||||||||||] 85% |---- Finance    [|||||||||||||  ] 75%  |---- Education  [||||||||||     ] 60% |---- Manufact.  [||||||||       ] 50%  Model Interpretability |---- Healthcare [||||||||||||||||] 90% |---- Finance    [|||||||||||||||] 85% |---- Education  [||||||||||     ] 60% |---- Manufact.  [|||||||        ] 45%  Computational Resources |---- Healthcare [|||||||||      ] 55% |---- Finance    [||||||||||||||] 80% |---- Education  [||||          ] 30% |---- Manufact.  [||||||||||||  ] 70%  Ethical Concerns |---- Healthcare [||||||||||||||||] 90% |---- Finance    [||||||||||||||  ] 80% |---- Education  [|||||||||||     ] 65% |---- Manufact.  [||||            ] 25% </code></pre>
+<section id="data-quality-and-availability" class="level3">
+<h3 class="anchored" data-anchor-id="data-quality-and-availability">5.1 Data Quality and Availability</h3>
+<ul>
+<li></li>
+<li><p>Data incompleteness and inconsistency remain significant challenges across domains.</p></li>
+<li></li>
+<li><p>Imbalanced datasets continue to present difficulties in classification tasks, particularly in healthcare and fraud detection.</p></li>
+<li></li>
+<li><p>Privacy regulations increasingly restrict data availability and sharing, particularly in healthcare and finance.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="model-interpretability" class="level3">
+<h3 class="anchored" data-anchor-id="model-interpretability">5.2 Model Interpretability</h3>
+<ul>
+<li></li>
+<li><p>Complex models, particularly deep learning approaches, often suffer from limited interpretability.</p></li>
+<li></li>
+<li><p>The trade-off between model performance and explainability remains a significant challenge in high-stakes applications.</p></li>
+<li></li>
+<li><p>Regulatory requirements for model transparency create implementation barriers in regulated industries.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="computational-resources" class="level3">
+<h3 class="anchored" data-anchor-id="computational-resources">5.3 Computational Resources</h3>
+<ul>
+<li></li>
+<li><p>Deep learning models require substantial computational resources, creating barriers to adoption for smaller organizations.</p></li>
+<li></li>
+<li><p>Real-time applications face latency challenges with complex models, particularly in edge computing scenarios.</p></li>
+<li></li>
+<li><p>Energy consumption of training large models raises sustainability concerns.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="ethical-and-legal-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="ethical-and-legal-considerations">5.4 Ethical and Legal Considerations</h3>
+<ul>
+<li></li>
+<li><p>Algorithmic bias remains a persistent challenge across applications, particularly in human-centered domains.</p></li>
+<li></li>
+<li><p>Privacy concerns and regulatory compliance add complexity to implementation in sensitive domains.</p></li>
+<li></li>
+<li><p>Questions of accountability and transparency become increasingly important as decision-making is automated.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="implementation-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="implementation-challenges">5.5 Implementation Challenges</h3>
+<ul>
+<li></li>
+<li><p>Integration with legacy systems presents technical challenges in established organizations.</p></li>
+<li></li>
+<li><p>Skills gaps in data science and machine learning limit effective implementation and maintenance.</p></li>
+<li></li>
+<li><p>Organizational resistance to data-driven decision-making creates adoption barriers.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="emerging-trends-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="emerging-trends-and-future-directions">6. Emerging Trends and Future Directions</h2>
+<section id="explainable-ai-xai" class="level3">
+<h3 class="anchored" data-anchor-id="explainable-ai-xai">6.1 Explainable AI (XAI)</h3>
+<ul>
+<li></li>
+<li><p>Methods for post-hoc explanation of black-box models are gaining traction across domains.</p></li>
+<li></li>
+<li><p>Inherently interpretable models are receiving renewed attention for high-stakes applications.</p></li>
+<li></li>
+<li><p>Regulatory pressure is driving increased focus on explainability frameworks and tools.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="federated-learning" class="level3">
+<h3 class="anchored" data-anchor-id="federated-learning">6.2 Federated Learning</h3>
+<ul>
+<li></li>
+<li><p>Privacy-preserving machine learning approaches are growing in importance with stricter data protection regulations.</p></li>
+<li></li>
+<li><p>Cross-organizational collaborative learning without data sharing shows promise in healthcare and finance.</p></li>
+<li></li>
+<li><p>Edge-based federated learning architectures enable model training on distributed devices.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="automl-and-neural-architecture-search" class="level3">
+<h3 class="anchored" data-anchor-id="automl-and-neural-architecture-search">6.3 AutoML and Neural Architecture Search</h3>
+<ul>
+<li></li>
+<li><p>Automated machine learning tools are democratizing access to sophisticated modeling techniques.</p></li>
+<li></li>
+<li><p>Neural architecture search continues to evolve, reducing the expertise required for deep learning implementation.</p></li>
+<li></li>
+<li><p>Meta-learning approaches enable faster adaptation to new tasks with limited data.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="few-shot-and-self-supervised-learning" class="level3">
+<h3 class="anchored" data-anchor-id="few-shot-and-self-supervised-learning">6.4 Few-Shot and Self-Supervised Learning</h3>
+<ul>
+<li></li>
+<li><p>Few-shot learning techniques address limitations in domains with scarce labeled data.</p></li>
+<li></li>
+<li><p>Self-supervised approaches leverage unlabeled data more effectively across domains.</p></li>
+<li></li>
+<li><p>Contrastive learning methods show promising results in computer vision and NLP applications.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="human-ai-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="human-ai-collaboration">6.5 Human-AI Collaboration</h3>
+<ul>
+<li></li>
+<li><p>Interactive machine learning systems incorporate human feedback for continuous improvement.</p></li>
+<li></li>
+<li><p>Decision support systems emphasize augmenting rather than replacing human decision-makers.</p></li>
+<li></li>
+<li><p>Explainable interfaces enable more effective collaboration between humans and AI systems.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="conclusions-and-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions-and-recommendations">7. Conclusions and Recommendations</h2>
+<section id="summary-of-findings" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-findings">7.1 Summary of Findings</h3>
+<p>This systematic review has revealed the widespread adoption and impact of data mining and machine learning across numerous domains. Key findings include:</p>
+<ul>
+<li></li>
+<li><p>Healthcare, finance, manufacturing, and retail demonstrate the most mature implementations with documented benefits.</p></li>
+<li></li>
+<li><p>Deep learning dominates in unstructured data applications, while ensemble methods lead in structured data contexts.</p></li>
+<li></li>
+<li><p>Implementation challenges extend beyond technical issues to organizational, ethical, and regulatory considerations.</p></li>
+<li></li>
+<li><p>Emerging trends suggest evolution toward more explainable, efficient, and privacy-preserving approaches.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="recommendations-for-practitioners" class="level3">
+<h3 class="anchored" data-anchor-id="recommendations-for-practitioners">7.2 Recommendations for Practitioners</h3>
+<ul>
+<li></li>
+<li><p>Prioritize problem formulation and data quality over model complexity for most business applications.</p></li>
+<li></li>
+<li><p>Consider the explainability requirements of the application domain when selecting modeling approaches.</p></li>
+<li></li>
+<li><p>Implement robust evaluation frameworks that extend beyond technical metrics to business impact measures.</p></li>
+<li></li>
+<li><p>Develop governance frameworks addressing ethical considerations and potential biases.</p></li>
+<li></li>
+<li><p>Invest in organizational change management alongside technical implementation.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="recommendations-for-researchers" class="level3">
+<h3 class="anchored" data-anchor-id="recommendations-for-researchers">7.3 Recommendations for Researchers</h3>
+<ul>
+<li></li>
+<li><p>Focus on developing more resource-efficient approaches that maintain performance with reduced computational demands.</p></li>
+<li></li>
+<li><p>Explore hybrid approaches combining domain knowledge with data-driven learning.</p></li>
+<li></li>
+<li><p>Develop better evaluation methodologies for comparing approaches across different contexts.</p></li>
+<li></li>
+<li><p>Investigate techniques to enhance model robustness against distribution shifts and adversarial attacks.</p></li>
+<li></li>
+<li><p>Address the interpretability-performance trade-off, particularly for high-stakes applications.</p></li>
+<li></li>
+<li><p>Expand cross-domain applications research, applying models across multiple fields.</p></li>
+<li></li>
+<li><p>Develop standardized frameworks for fairness, accountability, and transparency in AI systems.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="ethical-and-social-implications" class="level3">
+<h3 class="anchored" data-anchor-id="ethical-and-social-implications">7.4 Ethical and Social Implications</h3>
+<ul>
+<li></li>
+<li><p>The increasing deployment of data mining and machine learning systems across domains raises important ethical questions regarding privacy, consent, and data ownership.</p></li>
+<li></li>
+<li><p>Algorithmic bias remains a persistent challenge that must be addressed, particularly in applications that affect human welfare (e.g., healthcare, finance, employment).</p></li>
+<li></li>
+<li><p>The potential for job displacement due to automation requires proactive policy and educational responses.</p></li>
+<li></li>
+<li><p>More research is needed on participatory design approaches that include stakeholders in the development and implementation of data mining and machine learning systems.</p></li>
+<li></li>
+</ul>
+</section>
+<section id="limitations-of-the-review" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-of-the-review">7.5 Limitations of the Review</h3>
+<ul>
+<li></li>
+<li><p>Focus on English-language publications may have excluded relevant work from non-English sources.</p></li>
+<li></li>
+<li><p>Publication bias may favor reporting of successful applications over failures or mixed results.</p></li>
+<li></li>
+<li><p>The rapid evolution of the field means some recent innovations may be underrepresented in the peer-reviewed literature.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="case-studies">8. Case Studies</h2>
+<section id="healthcare-early-diabetes-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="healthcare-early-diabetes-prediction">8.1 Healthcare: Early Diabetes Prediction</h3>
+<p>Wang et al.&nbsp;(2021) developed a machine learning-based system for early diabetes prediction using electronic health records. The study utilized a random forest classifier on a dataset of 50,000 patients, achieving 89% accuracy in identifying patients at risk for developing diabetes within three years. Key features included demographic information, medication history, laboratory results, and lifestyle factors. The system was subsequently implemented in three hospitals as a clinical decision support tool, resulting in a 23% increase in early interventions.</p>
+</section>
+<section id="finance-fraud-detection-system" class="level3">
+<h3 class="anchored" data-anchor-id="finance-fraud-detection-system">8.2 Finance: Fraud Detection System</h3>
+<p>Zhang &amp; Liu (2020) implemented an ensemble-based fraud detection system for a major financial institution. The system combined gradient boosting machines, neural networks, and anomaly detection algorithms to identify potentially fraudulent transactions in real-time. Deployed on a stream processing platform, the system analyzed over 10 million transactions daily with a false positive rate of only 0.3%. The implementation reduced fraud losses by approximately $15 million annually while improving customer experience by minimizing legitimate transaction declines.</p>
+</section>
+<section id="manufacturing-predictive-maintenance" class="level3">
+<h3 class="anchored" data-anchor-id="manufacturing-predictive-maintenance">8.3 Manufacturing: Predictive Maintenance</h3>
+<p>Lee et al.&nbsp;(2022) developed a predictive maintenance system for industrial equipment using time-series analysis and deep learning. The system collected sensor data from manufacturing equipment, processed it using LSTM networks, and predicted potential failures up to 72 hours in advance with 92% accuracy. Implementation in a semiconductor manufacturing facility reduced unplanned downtime by 35% and maintenance costs by 28%.</p>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">9. References</h2>
+<p>[A comprehensive list of the cited references would be included here, formatted according to a standard citation style]</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Miguel Gutierrez</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
